@@ -1,0 +1,5 @@
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\TaskManagement.Models.csproj;neutral
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.ViewModel\TaskManagement.ViewModel.csproj;neutral
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Views\TaskManagement.Views.csproj;neutral
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement\TaskManagement.UWP\TaskManagement.UWP.csproj;x86
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement\TaskManagement\TaskManagement.csproj;neutral

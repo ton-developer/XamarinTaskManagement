@@ -1,0 +1,14 @@
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\TaskManagement.Models.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\TaskManagement.Models.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Core.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Platform.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Xaml.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Core.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Core.xml
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Platform.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Xaml.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Release\Xamarin.Forms.Xaml.xml
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\obj\Release\TaskManagement.Models.csprojResolveAssemblyReference.cache
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\obj\Release\TaskManagement.Models.csproj.CoreCompileInputs.cache
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\obj\Release\TaskManagement.Models.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\obj\Release\TaskManagement.Models.pdb

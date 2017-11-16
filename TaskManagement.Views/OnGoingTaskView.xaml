@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TaskManagement.ViewModel;assembly=TaskManagement.ViewModel"
+             x:Class="TaskManagement.Views.OnGoingTaskView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"></Setter>
+                <Setter Property="TextColor" Value="#494943"></Setter>
+                <Setter Property="BackgroundColor" Value="#c7d2e2"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout x:Name="root">
+        <StackLayout.BindingContext>
+            <vm:OnGoingTaskViewModel />
+        </StackLayout.BindingContext>
+
+        <ListView ItemsSource="{Binding ObservableCollectionTask}" SeparatorVisibility="None">
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32" iOS="150" Android="150" WinPhone="160" />
+            </ListView.RowHeight>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ContentView Padding="5">
+                            <Frame Padding="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout>
+                                        <Label Text="{Binding Id}" FontSize="16" Font="Bold" VerticalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Name}" FontSize="14" VerticalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Description}" FontSize="12" VerticalOptions="CenterAndExpand" />
+                                        <Button Text="Finish Task" HorizontalOptions="Center" 
+                                                Command="{Binding BindingContext.UpdateInfo, Source={x:Reference root}}" CommandParameter="{Binding .}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label x:Name="summaryLabel" VerticalOptions="CenterAndExpand" Text="{Binding Info}" />
+    </StackLayout>
+
+
+</ContentPage>

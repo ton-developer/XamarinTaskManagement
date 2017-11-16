@@ -1,0 +1,13 @@
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\TaskManagement.Models.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\TaskManagement.Models.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\obj\Debug\TaskManagement.Models.csproj.CoreCompileInputs.cache
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\obj\Debug\TaskManagement.Models.dll
+C:\Users\Oscar Jara\Source\Repos\TaskManagement\TaskManagement.Models\obj\Debug\TaskManagement.Models.pdb

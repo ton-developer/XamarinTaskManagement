@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TaskManagement.ViewModel;assembly=TaskManagement.ViewModel"
+             x:Class="TaskManagement.Views.AllTaskView">
+    <StackLayout>
+        <StackLayout.BindingContext>
+            <vm:AllTaskViewModel />
+        </StackLayout.BindingContext>
+
+        <ListView ItemsSource="{Binding ObservableCollectionPendingTasks}" SeparatorVisibility="None" BackgroundColor="Orange">
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32" iOS="150" Android="150" WinPhone="160" />
+            </ListView.RowHeight>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ContentView Padding="5">
+                            <Frame Padding="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout>
+                                        <Label Text="{Binding Id}" FontSize="16" Font="Bold" VerticalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Name}" FontSize="14" VerticalOptions="StartAndExpand" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView ItemsSource="{Binding ObservableCollectionOnGoingTasks}" SeparatorVisibility="None" BackgroundColor="Yellow">
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32" iOS="150" Android="150" WinPhone="160" />
+            </ListView.RowHeight>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ContentView Padding="5">
+                            <Frame Padding="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout>
+                                        <Label Text="{Binding Id}" FontSize="16" Font="Bold" VerticalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Name}" FontSize="14" VerticalOptions="StartAndExpand" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView ItemsSource="{Binding ObservableCollectionFinishedTasks}" SeparatorVisibility="None" BackgroundColor="Green">
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32" iOS="150" Android="150" WinPhone="160" />
+            </ListView.RowHeight>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ContentView Padding="5">
+                            <Frame Padding="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout>
+                                        <Label Text="{Binding Id}" FontSize="16" Font="Bold" VerticalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Name}" FontSize="14" VerticalOptions="StartAndExpand" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TaskManagement.ViewModel;assembly=TaskManagement.ViewModel"
+             x:Class="TaskManagement.Views.AddTaskView">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"></Setter>
+                <Setter Property="TextColor" Value="Blue"></Setter>
+                <Setter Property="BackgroundColor" Value="Beige"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+    
+    <StackLayout>
+        <StackLayout.BindingContext>
+            <vm:AddTaskViewModel />
+        </StackLayout.BindingContext>
+        <TableView x:Name="tableView" Intent="Form">
+            <TableRoot Title="Tasks creator">
+                <TableSection Title="Add the Task information">
+                    <EntryCell Label="Name: " Text="{Binding TaskInfoModel.Name}" Placeholder="Insert task name..." Keyboard="Text" />
+                    <EntryCell Label="Description: " Text="{Binding TaskInfoModel.Description}" Placeholder="Insert description..." Keyboard="Text" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Label x:Name="summaryLabel" VerticalOptions="CenterAndExpand" Text="{Binding Info}" />
+        <!--<Button Text="Submit" Command="{Binding UpdateInfo}" Style="{StaticResource buttonStyle}"/>-->
+        <Button Text="Submit" Command="{Binding UpdateInfo}" />
+    </StackLayout>
+</ContentPage>
